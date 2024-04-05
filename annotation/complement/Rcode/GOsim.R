@@ -1,0 +1,42 @@
+###calculating drug GO similarity (R software)
+rm(list=ls())
+# setwd("C:/Users/ASUS/Desktop")
+# 设置工作目录
+# if (!requireNamespace("BiocManager", quietly = TRUE))
+#   install.packages("BiocManager")
+# BiocManager::install("GOSemSim")
+# BiocManager::install("org.Hs.eg.db")
+
+library(GOSemSim)
+library(org.Hs.eg.db)
+# library(xlsx)
+library(readr)
+
+file_name = "../../data/Cosmic_CancerGeneCensus_v99_GRCh37.tsv"
+s = read_tsv(file_name)  ##read data from tsv file
+
+# file_name = '../../data/canonical_drivers.txt'
+# s = read.table(file_name, header = FALSE)
+
+spec(s)
+columns(org.Hs.eg.db)
+entrezid <- mapIds(org.Hs.eg.db, keys = s$GENE_SYMBOL, column="ENTREZID", keytype = "SYMBOL")
+# entrezid <- mapIds(org.Hs.eg.db, keys = s$V1, column="ENTREZID", keytype = "SYMBOL")
+# SYMBOL to ENTREZID
+# not all of them could be transferred
+# https://blog.csdn.net/weixin_40739969/article/details/89354167
+# https://www.jianshu.com/p/fdec9e60dd71
+# https://zhuanlan.zhihu.com/p/553457126
+# https://zhuanlan.zhihu.com/p/597249967?utm_id=0
+entr <- unique(entrezid) # 去掉重复的
+entr <- as.numeric(entr) # character转numeric
+entr <- na.omit(entr)    # 去NA
+entr <- sort(entr)
+MF <- godata('org.Hs.eg.db', ont="MF", computeIC=FALSE)
+# BP <- godata('org.Hs.eg.db', ont="BP", computeIC=FALSE)
+# CC <- godata('org.Hs.eg.db', ont="CC", computeIC=FALSE)
+# prepare GO DATA for measuring semantic similarity
+ss= mgeneSim(entr, semData=MF, measure="Wang")
+dim(ss)
+Out_file = "../../data/CGCsim.csv"
+write.table(ss, file=Out_file,sep=",",row.names=F, col.names = F)
