@@ -1,0 +1,11 @@
+Drug ID	drug_name	SMILES
+DB00463	Metharbital	CCC1(CC)C(=O)NC(=O)N(C)C1=O
+DB01280	Nelarabine	COC1=NC(N)=NC2=C1N=CN2[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1O
+DB00241	Butalbital	CC(C)CC1(CC=C)C(=O)NC(=O)NC1=O
+DB00554	Piroxicam	CN1C(C(=O)NC2=NC=CC=C2)=C(O)C2=C(C=CC=C2)S1(=O)=O
+DB03721	N-acetyl-alpha-neuraminic acid	[H][C@]1(O[C@](O)(C[C@H](O)[C@H]1NC(C)=O)C(O)=O)[C@H](O)[C@H](O)CO
+DB00153	Ergocalciferol	CC(C)[C@@H](C)\C=C\[C@@H](C)[C@@]1([H])CC[C@@]2([H])\C(CCC[C@]12C)=C\C=C1\C[C@@H](O)CCC1=C
+DB04315	Guanosine-5'-Diphosphate	NC1=NC2=C(N=CN2[C@@H]2O[C@H](COP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N1
+DB07092	(2S,3S)-3-AMINO-4-(3,3-DIFLUOROPYRROLIDIN-1-YL)-N,N-DIMETHYL-4-OXO-2-(TRANS-4-[1,2,4]TRIAZOLO[1,5-A]PYRIDIN-6-YLCYCLOHEXYL)BUTANAMIDE	[H][C@@](N)(C(=O)N1CCC(F)(F)C1)[C@@]([H])(C(=O)N(C)C)[C@@]1([H])CC[C@@]([H])(CC1)C1=CN2N=CN=C2C=C1
+DB09130	Copper	[Cu]
+DB00273	Topiramate	[H][C@@]12CO[C@@]3(COS(N)(=O)=O)OC(C)(C)O[C@@]3([H])[C@]1([H])OC(C)(C)O2
