@@ -18,7 +18,7 @@
 
 拓扑信息：***A***，其中<img src=".\img\3.png" alt="3" style="zoom:80%;" />
 
-是一个邻接矩阵，矩阵的值![2](.\img\2.png)代表边的权重
+是一个邻接矩阵，矩阵的值<img src=".\img\2.png" alt="2" style="zoom:100%;" />代表边的权重
 
 ## 数据举例
 
@@ -188,7 +188,7 @@ tensor([[6, 5, 4, 3, 5, 2, 7, 6, 1, 1, 3, 6, 3, 4, 2, 3, 3, 7, 7, 7],
    - 验证集的负边：<img src=".\img\5.png" alt="5" style="zoom: 50%;" />
    - 测试集的负边：<img src=".\img\6.png" alt="6" style="zoom:50%;" />
 
-   其中<img src=".\img\7.png" alt="7" style="zoom:50%;" /> 是原始图中全部的负边(包括自环self-loops)
+   其中<img src=".\img\7.png" alt="7" style="zoom:50%;" /> 是原始图中全部的负边(不包括自环self-loops)
 
 ### 举例
 
