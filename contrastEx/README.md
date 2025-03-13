@@ -15,6 +15,6 @@
 |----|----|----|----|----|----|----|
 | A network integration approach for drug-target interaction prediction and computational drug repositioning from heterogeneous information|2017|DTINet|https://github.com/luoyunan/DTINet|Classic|N|N|
 | deepDR: a network-based deep learning approach to in silico drug repositioning|2019|deepDR|https://github.com/ChengF-Lab/deepDR|Classic|Y|N|
-|Predicting drug–disease associations through layer attention graph convolutional network|2021|LAGCN|https://github.com/storyandwine/LAGCN||Classic|Y|N|
+|Predicting drug–disease associations through layer attention graph convolutional network|2021|LAGCN|https://github.com/storyandwine/LAGCN|Classic|Y|N|
 | HINGRL: predicting drug–disease associations with graph representation learning on heterogeneous information networks|2022|HINGRL|https://github.com/stevejobws/HINGRL|Important|Y|N|
 | Ageometric deep learning framework for drug repositioning over heterogeneous information networks|2022|DDAGDL|https://github.com/stevejobws/DDAGDL|Important|Y|N|
